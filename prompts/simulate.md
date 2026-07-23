@@ -1,0 +1,14 @@
+# /simulate — 模拟考试提示词
+
+> 用法：「/simulate &lt;套题&gt;」或「/simulate 180题计时」。
+
+## 提示词
+
+请组织一次模考：**{{套题}}**
+
+要求：
+1. 从 `04-practice/mock/` 选一套（或凑 180 题计时 230 分钟）。
+2. 按真实节奏分批出题，我先答，你暂不给答案。
+3. 全部答完后统一对答案、算分，按 people/process/business/agile 拆分。
+4. 记入 `00-dashboard/exam_readiness.md`，给出趋势和备考建议。
+5. 错题入 `05-mistakes/`。

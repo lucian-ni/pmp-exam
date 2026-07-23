@@ -16,3 +16,6 @@ out/
 # VS Code
 .vscode/
 *.code-workspace
+
+# Office inbox：公司端产出中转，不进 git，靠人工拷贝文本回家录入
+inbox/
