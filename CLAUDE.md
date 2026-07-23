@@ -15,8 +15,11 @@
 4. 某节偏大可在讲的时候临时再拆，进度按实际更新。
 5. 用户有 PMBOK 第六版底子，但**讲解直接讲第七版本身，不要做"对照第六版"的比较/表格/差异框架**（用户明确不要）。
 
-**当前实际资料结构**：5 大类（`01-官方教材`/`02-讲义课件`/`03-知识点笔记`/`04-习题题库`/`05-考前冲刺与应试`），习题已转 md 可 grep，详见 `README.md`。
-> 注意：下文「目录约定」中的 `00-dashboard`/`02-learning`/`03-knowledge-base`/`05-mistakes` 等是**规划中但尚未建立**的学习工作区目录。现阶段学习产出（笔记/错题/进度）**先记入 `学习进度.md` 的日志**；待用户确认要建这些目录后再落盘。
+**当前资料结构（A 方案，已采用）**：工作区式结构，详见 `README.md`。
+- **材料**：`01-material/`（official/agile/slides/search 教材课件）、`03-knowledge-base/`（concepts/compare/formulas/cheat_sheet/mindmaps 知识资产）、`04-practice/`（chapter/agile/mock/studyhall/daily 题库，已转 md 可 grep）
+- **工作区**：`00-dashboard/`（weak_points/exam_readiness 跟踪）、`02-learning/`（按领域笔记）、`05-mistakes/`（错题）、`exam-info/`（报考）、`prompts/`（流程模板）、`inbox/`（双环境中转）
+- **材料-路径对照**：思维导图=`03-knowledge-base/mindmaps`；核心笔记=`03-knowledge-base/concepts`；概念辨析=`03-knowledge-base/compare`；公式口诀=`03-knowledge-base/formulas`；蒙题/做题技巧=`03-knowledge-base/cheat_sheet`；教材/过程组=`01-material/official`；敏捷指南=`01-material/agile`；凌峰课件=`01-material/slides/凌峰班`；分章题=`04-practice/chapter`；敏捷题=`04-practice/agile`；模考=`04-practice/mock`；官方题=`04-practice/studyhall`；每日一练=`04-practice/daily`。
+- **进度跟踪以 `学习进度.md` 为准**（30节+日志）；`00-dashboard/study_plan.md` 已被 学习进度.md 取代，`weak_points.md`/`exam_readiness.md` 留作模考阶段用。
 
 ## 会话启动：先确认你在哪里 ⚠️
 
