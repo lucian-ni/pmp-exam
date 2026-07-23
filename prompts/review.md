@@ -11,4 +11,16 @@
 2. 归类错因，找出反复模式，更新 `05-mistakes/recurring_patterns.md`。
 3. 对每个错题对应的知识点，从 `03-knowledge-base/` 找复习材料。
 4. 出 1-2 道同类变式题再考我，确认已掌握。
-5. 更新 `00-dashboard/weak_points.md` 与 `progress.md`。
+5. 更新 `00-dashboard/weak_points.md`。
+
+---
+
+## 间隔复习模式（到期触发）
+
+> 用法：新 session 发现 `学习进度.md`「间隔复习状态」表有到期节时，主动用本模式。
+
+步骤：
+1. 读到期节的 `02-learning/<领域>/<节>.md` 笔记 + 该节关联错题 `05-mistakes/<领域>.md`。
+2. 重做该节原错题（遮答案），再出 2 道变式题考我。
+3. 全过 -> 顺延下一档（D1->D3->D7->D14->已巩固），更新 `学习进度.md`「间隔复习状态」表（下次复习日）。
+4. 仍有错 -> 重置为 +1 天，更新 `00-dashboard/weak_points.md`，把错题补回 `05-mistakes`。
