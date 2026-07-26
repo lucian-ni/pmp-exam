@@ -36,7 +36,7 @@
 
 ## 双环境工作流（家 / 公司）
 
-**背景**：公司机器只能 `git pull` 不能 `git push`，公司里产生的笔记/错题/日志无法直接进 git。
+**背景**：公司机器只能 `git pull` 不能 `git push`，公司里产生的错题/进度无法直接进 git。
 **解法**：公司端把产出写进本地 `inbox/`（不进 git）-> 人工拷贝文本回家 -> 家端录入正式文件 -> push。
 
 ### inbox 机制
@@ -45,14 +45,12 @@
 - 公司 Claude 首次写时 `mkdir -p inbox`。
 
 ### inbox 文件格式（事件块）
-每条产出一个块，以 `## 类型 -> 目标文件` 开头，家端按块 replay。
+每条产出一个块，以 `## 类型 -> 目标文件` 开头，家端按块 replay。**公司只记两种：`MISTAKE`（错题）、`LOG`（进度），其它一律不写**。
+**记录要精简**：每块只记必填字段--错题题干一句概括、错因一句话，日志一行带过；**不复述题目原文、不写长解释、不写感想**，能 grep 到关键信息即可，字越少越好。
 **日期规则**：所有块里的日期 = 做题当天。公司做题当天就写进块（Claude 用当天日期），家端录入**照抄不重填**（不用录入当天的日期顶做题日）。示例：
 
 ~~~
 # Office Inbox · 2026-07-23
-
-## NOTE -> 02-learning/02-people
-干系人参与度评估矩阵：按权力×利益分四类……（笔记正文，markdown）
 
 ## MISTAKE -> 05-mistakes/agile
 - 日期：2026-07-23（做题当天，家端录入照抄不重填）
@@ -62,29 +60,17 @@
 - 错因：混淆了 SM 与 coach 职责
 - 关联：[[03-knowledge-base/concepts/...]] / [[recurring_patterns]]
 
-## LOG -> 学习进度.md(学习日志)
+## LOG -> 学习进度.md
 | 2026-07-23 | 凌峰班第3章 + 沟通10题 | 10 | 3 | 干系人易混 |
-
-## WEAK -> 00-dashboard/weak_points
-敏捷：scrum master vs coach 区别不清
-
-## MOCK -> 00-dashboard/exam_readiness
-| 2026-07-23 | mock/PMP全真(一) | 72% | 18/22/15/17 | 210min | 首模考 |
-
-## PROGRESS -> 学习进度.md(节打勾) + progress 派生刷新
-人员：讲义✅ 刷题🔄(20题) 错题3
+节：第3章第2节 ✅（顺带打勾 + 刷新 progress 派生视图）
 ~~~
 
-块类型 -> 录入动作：
+块类型 -> 录入动作（**仅此两种**）：
 
 | 类型 | 目标 | 录入动作 |
 |---|---|---|
-| NOTE | `02-learning/*` | append 到对应文件（加二级标题分隔） |
 | MISTAKE | `05-mistakes/*` | append 到对应领域文件（用错题模板） |
-| LOG | `学习进度.md` | append 一行到「学习日志」表 |
-| WEAK | `weak_points.md` | append 到对应领域列表 |
-| MOCK | `exam_readiness.md` | append 一行 + 更新趋势分析/备考建议 |
-| PROGRESS | `学习进度.md` | 对应节打勾 + 刷新 `progress.md` 派生视图 |
+| LOG | `学习进度.md` | append 一行到「学习日志」表 + 对应节打勾 + 刷新 `progress.md` 派生视图 |
 
 ### 家端录入流程
 1. 用户把公司拷贝的 inbox 文本贴进来，或存成 `inbox/office-YYYY-MM-DD.md`。
