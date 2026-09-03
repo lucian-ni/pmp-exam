@@ -12,6 +12,7 @@
 1. **一次只学一节**：课程已拆成 30 节（参照用户第六版分 38 块的习惯，保持小块，**不要一次讲太大块**）。节清单见 `学习进度.md`。
 2. **讲解要详细充分**：不要过于简略，把"是什么/为什么/怎么考/怎么记"讲透，配例子。
 3. **每节讲完出选择题**（PMP 风格：情景题干 + 选项 A-D，可单选/多选）。**题量按内容多少定，5-8 道之间**（内容多则加题，不固定 5 道）。**难度对标 PMP 真实考试**：以情景应用题为主、干扰项有迷惑性、避免直白背诵题。**出题时先不给答案**，等用户作答后再判分 + 逐题解析 + 揭示答案。用户答对/理解才进下一节。
+ - **出题先过考纲（必须遵守）**：抽题/仿造前先对照 `01-material/考纲/PMP考试内容大纲-中文.md` 的三领域 35 任务及驱动因素；超纲题（纯第六版 ITTO 背诵、财务公式计算、质量人物等记忆题、与任务无关的抠字眼题）不选；题库中无法替换的个别超纲题须明确标注"考纲外，仅作了解"。模考整套题也应按此过滤或标注。
    - **出题不暴露答案（必须遵守）**：
      - ① **题目不带考点提示**：不在题干/选项前标注所属原则、领域、知识标签（如"（风险）""（变革）""原则 10"），让用户自己判断考点。
      - ② **题干用全新情景**：讲解里举过的例子/情景，题目**不得原样复用或近义翻版**（否则等于念答案）。讲解该举例照举例、该点考点照点，但**测验题必须用新场景独立考查**，确保用户是真掌握而非对号入座。
@@ -24,7 +25,7 @@
 **当前资料结构（A 方案，已采用）**：工作区式结构，详见 `README.md`。
 - **材料**：`01-material/`（official/agile/slides/search 教材课件）、`03-knowledge-base/`（concepts/compare/formulas/cheat_sheet/mindmaps 知识资产）、`04-practice/`（chapter/agile/mock/studyhall/daily 题库，已转 md 可 grep）
 - **工作区**：`00-dashboard/`（progress 派生 + weak_points/exam_readiness 跟踪）、`02-learning/`（节级过程笔记）、`05-mistakes/`（错题）、`exam-info/`（报考）、`prompts/`（流程模板）、`inbox/`（双环境中转）
-- **材料-路径对照**：思维导图=`03-knowledge-base/mindmaps`；核心笔记=`03-knowledge-base/concepts`；概念辨析=`03-knowledge-base/compare`；公式口诀=`03-knowledge-base/formulas`；蒙题/做题技巧=`03-knowledge-base/cheat_sheet`；教材/过程组=`01-material/official`；敏捷指南=`01-material/agile`；凌峰课件=`01-material/slides/凌峰班`；分章题=`04-practice/chapter`；敏捷题=`04-practice/agile`；模考=`04-practice/mock`；官方题=`04-practice/studyhall`；每日一练=`04-practice/daily`。
+- **材料-路径对照**：思维导图=`03-knowledge-base/mindmaps`；核心笔记=`03-knowledge-base/concepts`；概念辨析=`03-knowledge-base/compare`；公式口诀=`03-knowledge-base/formulas`；蒙题/做题技巧=`03-knowledge-base/cheat_sheet`；教材/过程组=`01-material/official`；敏捷指南=`01-material/agile`；凌峰课件=`01-material/slides/凌峰班`；**考纲=`01-material/考纲`（中/英两份 md + 原 PDF）**；分章题=`04-practice/chapter`；敏捷题=`04-practice/agile`；模考=`04-practice/mock`；官方题=`04-practice/studyhall`；每日一练=`04-practice/daily`。
 - **进度跟踪以 `学习进度.md` 为准**（30节+日志+间隔复习状态）；`00-dashboard/study_plan.md`/`learning_log.md` 已删除并入 `学习进度.md`，`progress.md` 改派生视图；`weak_points.md`/`exam_readiness.md` 保留。
 
 ## 会话启动：先确认你在哪里 ⚠️
