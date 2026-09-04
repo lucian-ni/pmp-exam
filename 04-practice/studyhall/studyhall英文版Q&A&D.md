@@ -1,5 +1,7 @@
 # studyhall英文版Q&A&D
 
+> 旧转换残留：社区讨论混进题干，约 496 题且有乱码/广告。**不要当题库刷。** 完整 778 题请用 `studyhall英文版Q.md` / `studyhall英文版Q&A.md`。
+
 ## 第1题
 A project manager leads a software development project in a hybrid environment. During project planning, the project manager identi ed a riskwhere a technical resource for a critical path item may not be available when needed. One week before the resource is needed, the technicalengineer had a personal emergency and had to take a leave.What should the project manager do next?2 once the sprint is started, scope cannot be changed, it is committed by product owner and team. but the team velocity is not dropped because ofreduced resource. Agile is time boxing and based on team velocity, the incompleted user stories should put back to product backlog and reprioritized for subsequent sprint, so B is out3 Agile length of iteration is fixed and should not be changed due to change in velocity unless it is float based but this point is not mentioned inthe question so C is outthe timeline may not be necessary or beneficial.project's success. Consider the team's expertise and the significance of the equipment in delivering the final product.2: GMAT,GRE exams3: IAPP Certifications(CIPP/E CIPM, CIPT)Y4: ISACA certifications (CISA,CISM/ CRISC)5: EC-COUNCIL Certification (CEH , CCISO )6: PMI (PMP/CAPM/ACP/PBA ,RMP)7: IMA (CMA certification)8: CIA,IFRS, CERTIFICATIONS9: ACCA,CFA,ICAEW certifications10: ISO certification11 PASS CISSP EXAMYValidation won't help.
 

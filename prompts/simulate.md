@@ -7,8 +7,8 @@
 请组织一次模考：**{{套题}}**
 
 要求：
-1. 从 `04-practice/mock/` 选一套（或凑 180 题计时 230 分钟）。
+1. 冲刺阶段默认从 Study Hall 英文版抽一批（中英对照，格式见 `CLAUDE.md`「冲刺刷题」），不要从 `04-practice/mock/` 另开一套，除非用户点名收尾某套旧模考。
 2. 按真实节奏分批出题，我先答，你暂不给答案。
-3. 全部答完后统一对答案、算分，按 people/process/business/agile 拆分。
-4. 记入 `00-dashboard/exam_readiness.md`，给出趋势和备考建议。
+3. 全部答完后统一对答案、算分。分批判分时：先对错总表，再只讲错题/不会的题——先复述该题中英全文，再逐选项解析（见 `CLAUDE.md`「错题讲解方式」）。
+4. 记入 `00-dashboard/exam_readiness.md` 与 `学习进度.md`「Study Hall 刷题进度」。
 5. 错题入 `05-mistakes/`。
